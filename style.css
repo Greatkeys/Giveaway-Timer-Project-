@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #333;
+    color: #fff;
+    line-height: 1.5;
+    max-width: 1300px;
+    margin: auto;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+.section-center{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px 20px;
+}
+.gift-img{
+    margin: 0 30px;
+}
+.gift-img img{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.gift-info{
+    max-width: 100%;
+}
+.gift-info h3{
+    font-size: 2rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+
+}
+.gift-info h4{
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+.gift-info p{
+    font-size: 1.2rem;
+    max-width: 70%;
+}
+.deadline-format{
+    margin-top: 2rem;
+    width: 60%;
+}
+.deadline{
+    display: flex;
+    gap: 6px;
+    justify-content: space-between;
+    align-items: center;
+}
+/* styling the card */
+.deadline div{
+    background-color: rgb(70, 65, 65);
+    min-width: 4rem;
+    text-align: center;
+    border-radius: 10%;
+    text-transform: capitalize;
+    line-height: 1;
+    padding: 10px 10px;
+    color: white;
+    cursor: pointer;
+}
+.deadline div h4{
+    font-size: 1.5rem;
+}
+.deadline div span{
+    font-size: 1.2rem;
+}
+@media (max-width: 800px) {
+    body{
+        min-height: 50vh;
+    }
+    .section-center{
+        grid-template-columns: 1fr;
+    }   
+    .gift-img{
+        overflow: hidden;
+        margin: 0px;
+    }
+    .gift-img img{
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+    .gift-info{
+        margin-top: 0vh;
+        padding: 0;
+    }
+    .gift-info h3{
+        font-size: 1.7rem;
+        line-height: 1.3;
+    }
+    .gift-info h4{
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+    .gift-info p {
+        font-size: 1.1rem;
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+    .deadline-format{
+        width: 90%;
+        margin: auto;
+    }
+    .deadline h4{
+        font-size: calc(1.2rem + 1vw);
+    }
+    .deadline span{
+        font-size: 1rem;
+    } 
+} 
+/* @media (max-width:375px) {
+    .gift-img{
+        border: 1px solid red;
+    }
+    .gift-img img{
+        width: 100px;
+    }   
+    .gift-info h3{
+        margin-top: 0;
+        font-size: 1.2rem;
+    }
+    .gift-info h4{
+        font-size: 0.8rem;
+    }
+    .gift-info p {
+        font-size: 1rem;
+    }
+    .deadline-format{
+        width: 100%;
+    }
+    .deadline h4{
+        font-size: 0.4rem;
+    }
+    .deadline span{
+        font-size: 7rem;
+    }
+    .deadline div{
+        width: 2rem;
+        border: 1px solid blue;
+
+    }
+} */
